@@ -1,0 +1,28 @@
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    div{
+        div{
+            width: 25%;
+            padding: 20px 0 20px 0;
+            &:hover{
+                background-color: white;
+                transition: 0.5s;
+                a{
+                    color: black;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.b-right{
+    border-right: 2px solid white;
+}

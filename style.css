@@ -1,0 +1,151 @@
+header {
+  margin: 0 5% 0 5%;
+}
+
+#searchicon {
+  height: 1em;
+  width: 1em;
+}
+
+nav {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 25px;
+}
+nav div {
+  /* padding: 10px 25px 10px 25px; */ /*comment out for prettier navbar with flex wrap part */
+  transition: 0.5s;
+}
+nav div:hover {
+  background-color: gray;
+}
+nav div:hover a {
+  color: white;
+}
+nav div a {
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 2%;
+}
+footer div div {
+  width: 25%;
+  padding: 20px 0 20px 0;
+}
+footer div div:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+footer div div:hover a {
+  color: black;
+}
+footer div div a {
+  text-decoration: none;
+  color: white;
+}
+
+.b-right {
+  border-right: 2px solid white;
+}
+
+/* Structure */
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Content */
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+
+#content {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+#content > div { /* &> only select direct child */
+  position: relative;
+}
+#content > div:hover {
+  box-shadow: 10px 10px gray;
+  transition: 1s;
+}
+#content > div div {
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 15%;
+  opacity: 0.7;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+#content > div div p {
+  opacity: 1;
+  color: white;
+}
+
+/* Recipe of the Month */
+article {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2% 5% 2% 5%;
+}
+
+.heroimg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  aspect-ratio: 16/10;
+}
+
+.shoplist {
+  width: 33%;
+  background-color: rgba(185, 185, 185, 0.318);
+  padding: 20px;
+}
+
+.prep {
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  #content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
